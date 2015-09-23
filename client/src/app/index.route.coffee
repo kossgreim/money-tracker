@@ -3,8 +3,12 @@ angular.module "client"
     $stateProvider
       .state "home",
         url: "/"
-        templateUrl: "app/main/main.html"
+        templateUrl: "app/views/main/main.html"
         controller: "MainController"
         controllerAs: "main"
+      .state "user_registration_new",
+        utl: "/user_registrations/new"
+        templateUrl: "app/views/user_registrations/new.html"
+        controller: 'UserRegistrationsCtrl'
 
     $urlRouterProvider.otherwise '/'

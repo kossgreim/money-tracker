@@ -1,2 +1,3 @@
 angular.module "client"
-  .controller "AuthCntrl", ($authSrvice) ->
+  .controller "UserRegistrationsCtrl", ($scope, $auth) ->
+    
