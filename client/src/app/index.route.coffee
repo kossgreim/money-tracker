@@ -6,8 +6,8 @@ angular.module "client"
         templateUrl: "app/views/main/main.html"
         controller: "MainController"
         controllerAs: "main"
-      .state "user_registration_new",
-        utl: "/user_registrations/new"
+      .state "new_user_registration",
+        url: "/user_registrations/new"
         templateUrl: "app/views/user_registrations/new.html"
         controller: 'UserRegistrationsCtrl'
 
