@@ -27,7 +27,7 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.before(:all, type: :feature) do
-    system("gulp build")
+    system("cd client &&  gulp build")
   end
 
   config.after(:all, type: :feature) do
