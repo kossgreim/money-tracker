@@ -20,6 +20,7 @@ group :test do
   gem 'rspec-rails'
   gem 'ffaker'
   gem 'factory_girl_rails'
+  gem 'capybara'
 end
 
 
