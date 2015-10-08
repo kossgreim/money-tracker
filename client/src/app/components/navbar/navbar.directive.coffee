@@ -1,11 +1,7 @@
 angular.module "client"
   .directive 'acmeNavbar', ->
 
-    NavbarController = (moment) ->
-      vm = this
-      # "vm.creation" is avaible by directive option "bindToController: true"
-      vm.relativeDate = moment(vm.creationDate).fromNow()
-      return
+    NavbarController = () ->
 
     directive =
       restrict: 'E'
