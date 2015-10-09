@@ -1,7 +1,7 @@
 angular.module "client"
   .directive 'acmeNavbar', ->
 
-    NavbarController = () ->
+    NavbarController = ($auth) ->
 
     directive =
       restrict: 'E'

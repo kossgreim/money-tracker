@@ -3,6 +3,24 @@
 <div class="col-md-12 col-lg-12">
   <form ng-submit="handleRegBtnClick()" role="form" ng-init="registrationForm = {}">
     <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text"
+             name="name"
+             id="name"
+             ng-model="registrationForm.name"
+             required="required"
+             class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input type="text"
+             name="last_name"
+             id="last_name"
+             ng-model="registrationForm.last_name"
+             required="required"
+             class="form-control">
+    </div>
+    <div class="form-group">
       <label for="email">Email</label>
       <input type="email"
              name="email"

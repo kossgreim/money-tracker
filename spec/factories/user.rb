@@ -8,7 +8,7 @@ FactoryGirl.define do
     confirmed_at { DateTime.now }
 
     after(:build) do |u|
-     u.confirm!
+     u.confirm
      u.skip_confirmation_notification!
    end
   end

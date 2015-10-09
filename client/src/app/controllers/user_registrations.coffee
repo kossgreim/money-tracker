@@ -1,8 +1,8 @@
 angular.module "client"
-  .controller "UserRegistrationsCtrl", ($scope, $auth) ->
+  .controller "UserRegistrationsCtrl", ($scope, $auth, $location) ->
     $scope.handleRegBtnClick = ->
       $auth.submitRegistration($scope.registrationForm)
         .then (resp)->
-          console.log resp
+          $location.path('/')
         .catch (resp)->
           console.log 'error'
