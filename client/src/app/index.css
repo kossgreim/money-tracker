@@ -12,3 +12,10 @@
 .thumbnail img.pull-right {
   width: 50px;
 }
+
+.top-right{
+  display: block;
+  margin-right: 10%;
+  float: right;
+  width: 30%;
+}

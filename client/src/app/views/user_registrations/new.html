@@ -1,5 +1,10 @@
 
 <h1>Registration</h1>
+<div class="alert alert-danger" ng-show="errors" role="alert">
+  <ul>
+    <li ng-repeat="error in errors">{{error}}</li>
+  </ul>
+</div>
 <div class="col-md-12 col-lg-12">
   <form ng-submit="handleRegBtnClick()" role="form" ng-init="registrationForm = {}">
     <div class="form-group">

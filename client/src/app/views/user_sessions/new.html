@@ -1,3 +1,8 @@
+<div class="alert alert-danger" ng-show="errors" role="alert">
+  <ul>
+    <li ng-repeat="error in errors">{{error}}</li>
+  </ul>
+</div>
 <form ng-submit="submitLogin(loginForm)" role="form" ng-init="loginForm = {}">
   <div class="form-group">
     <label for="email">Email</label>
