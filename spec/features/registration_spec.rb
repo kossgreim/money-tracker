@@ -11,7 +11,7 @@ describe 'registration', type: :feature, js: true do
       fill_in 'Password', with: user.password
       fill_in 'Password confirmation', with: user.password
 
-      expect(page).to have_countent('Sign out')
+      expect(page).to have_content('Sign out')
     end
   end
 end

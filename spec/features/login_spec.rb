@@ -4,18 +4,18 @@ describe 'Login', type: :feature, js: true do
   before do
     @user = create(:user)
     @login_page = LoginPage.new
-    @login_page.visit
   end
   feature 'with valid creditials' do
-    before do
+    before(:each) do
+      @login_page.visit
       @login_page.sign_in(@user.email, @user.password)
     end
-    scenario 'creates a new account' do
-      expect(page).to have_content('Sign out')
+
+    scenario 'logins to a new account' do
+      expect(page).to have_content('Welcome')
     end
     scenario 'redirect after successfull login' do
-      expect(page).to have_content('main page')
-      #expect(current_path).to eq('#/')
+      expect(page).to have_content('Sing out')
     end
   end
 end
